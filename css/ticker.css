@@ -1,0 +1,303 @@
+/* Premium Announcement Ticker Styles */
+.ticker-section {
+    background: #ffffff;
+    border-bottom: 2px solid #d4af37;
+    /* Gold bottom border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 15;
+    /* Higher than before */
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.ticker-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Premium Badge Label */
+.ticker-label {
+    background: linear-gradient(135deg, #003366 0%, #002244 100%);
+    /* Deep Navy Gradient */
+    color: #fff;
+    padding: 0 35px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    /* Slightly sharper for authoritative look */
+    font-weight: 800;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    margin-right: 20px;
+    box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    /* Subtle gold border */
+}
+
+/* Gold Accent Line on Badge */
+.ticker-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #d4af37;
+    border-radius: 4px 0 0 4px;
+}
+
+.ticker-label i {
+    margin-right: 12px;
+    font-size: 1.2rem;
+    color: #ffd700;
+    /* Gold Icon */
+    animation: pulse-icon 2s infinite;
+}
+
+@keyframes pulse-icon {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Marquee Content */
+.ticker-track {
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* Gradient masks for fading effect */
+    mask-image: linear-gradient(to right, transparent, black 30px, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 30px, black 95%, transparent);
+}
+
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: ticker-scroll 35s linear infinite;
+    /* Slower for readability */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 1.05rem;
+}
+
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 60px;
+    position: relative;
+}
+
+/* Premium Gold Divider */
+.ticker-item::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 2px;
+    background-color: rgba(212, 175, 55, 0.4);
+    /* Gold divider */
+}
+
+.ticker-item:last-child::after {
+    display: none;
+}
+
+.ticker-item a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.ticker-item a:hover {
+    color: #003366;
+    text-shadow: 0 0 1px rgba(0, 51, 102, 0.2);
+}
+
+/* Badge New */
+.ticker-badge-new {
+    background: #d4af37;
+    color: #003366;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-weight: 800;
+    vertical-align: middle;
+}
+
+/* Controls */
+.ticker-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 25px;
+    background: #fff;
+    flex-shrink: 0;
+    height: 100%;
+    z-index: 20;
+    position: relative;
+}
+
+/* Separator before controls */
+.ticker-controls::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: 1px;
+    background: #e2e8f0;
+}
+
+.btn-ticker-control {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-ticker-control:hover {
+    background: #fff;
+    border-color: #d4af37;
+    color: #d4af37;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-ticker-view-all {
+    background: transparent;
+    color: #003366;
+    border: 2px solid #003366;
+    padding: 0 25px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.btn-ticker-view-all:hover {
+    background: #003366;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.25);
+    transform: translateY(-1px);
+}
+
+/* Animation Keyframes */
+@keyframes ticker-scroll {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+/* Pause State */
+.ticker-content.paused {
+    animation-play-state: paused;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .ticker-section {
+        height: auto;
+        padding: 5px 0;
+    }
+
+    .ticker-wrap {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ticker-label {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+        height: 30px;
+        /* Smaller height */
+        padding: 0 10px;
+        font-size: 0.8rem;
+        justify-content: center;
+        /* Center text */
+    }
+
+    .ticker-track {
+        height: 30px;
+        /* Smaller track height */
+        margin-bottom: 5px;
+    }
+
+    .ticker-content {
+        font-size: 0.85rem !important;
+        /* Smaller text */
+        line-height: 30px;
+    }
+
+    /* Controls adjustment */
+    .ticker-controls {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .ticker-controls::before {
+        display: none;
+    }
+
+    .btn-ticker-view-all {
+        height: 30px;
+        font-size: 0.75rem;
+        padding: 0 15px;
+    }
+
+    .btn-ticker-control {
+        width: 30px;
+        height: 30px;
+    }
+}

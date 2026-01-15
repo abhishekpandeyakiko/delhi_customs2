@@ -1,0 +1,463 @@
+<!-- Main Header Container (Sticky) -->
+<header id="main-header" class="sticky-top w-100 bg-white">
+    <!-- Top Bar -->
+    <div class="top-bar py-1 border-bottom bg-white" style="font-size: 0.8rem;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left Side: Accessibility Links -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#main-content" class="top-bar-link d-none d-md-block"><i
+                        class="bi bi-arrow-down-circle me-1"></i>
+                    Skip to Main Content</a>
+                <a href="#" class="top-bar-link d-none d-md-block"><i class="bi bi-volume-up me-1"></i> Screen Reader
+                    Access</a>
+            </div>
+
+            <!-- Right Side: Navigation & Accessibility Trigger -->
+            <div class="d-flex align-items-center gap-4">
+                <a href="index.html" class="top-bar-link">Home</a>
+                <a href="#" class="top-bar-link">Sitemap</a>
+                <a href="#" class="top-bar-link">Contact Us</a>
+
+                <!-- Accessibility Trigger (Offcanvas) -->
+                <div class="border-start ps-3 ms-2">
+                    <button class="btn-accessibility" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#accessibilityOffcanvas" aria-controls="accessibilityOffcanvas">
+                        <i class="bi bi-person-wheelchair fs-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accessibility Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-accessibility" tabindex="-1" id="accessibilityOffcanvas"
+        aria-labelledby="accessibilityOffcanvasLabel">
+        <div class="offcanvas-header offcanvas-header-premium">
+            <h5 class="offcanvas-title fw-bold" id="accessibilityOffcanvasLabel">
+                <i class="bi bi-universal-access me-2"></i> Accessibility
+            </h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <!-- Text Resize Section -->
+            <div class="accessibility-panel-section">
+                <label class="access-label">Text Resize</label>
+                <div class="d-flex justify-content-between px-3">
+                    <button class="access-btn-circle" title="Decrease Font">A-</button>
+                    <button class="access-btn-circle active" title="Standard Font">A</button>
+                    <button class="access-btn-circle" title="Increase Font">A+</button>
+                </div>
+            </div>
+
+            <!-- Language Section -->
+            <div class="accessibility-panel-section">
+                <label class="access-label">Language / भाषा</label>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary btn-sm active fw-bold">English</button>
+                    <button class="btn btn-outline-secondary btn-sm fw-bold">हिन्दी</button>
+                </div>
+            </div>
+
+            <!-- Contrast Section (Placeholder) -->
+            <div class="accessibility-panel-section">
+                <label class="access-label">Display Mode</label>
+                <div class="d-flex gap-2 justify-content-center">
+                    <button class="btn btn-light border w-100 active"><i class="bi bi-sun"></i> Light</button>
+                    <button class="btn btn-dark w-100"><i class="bi bi-moon"></i> Dark</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Logo and Branding Area -->
+    <div class="bg-white py-2 shadow-sm relative" style="z-index: 1000;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="/images/logo.png" alt="Emblem" style="height: 80px; margin-right: 20px;"
+                    onerror="this.style.display='none'">
+                <div class="d-flex flex-column">
+                    <h2 class="m-0 fs-3 fw-bold text-primary-blue">Delhi Customs Zone</h2>
+                    <h5 class="m-0 fs-6 text-secondary">Government of India</h5>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex align-items-center gap-4">
+                <!-- Header Search -->
+                <div class="header-search-container">
+                    <input type="text" class="search-input-header" placeholder="Search here...">
+                    <button class="btn-search-header">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <img src="/images/emblem-logo.png" alt="G20/Azadi" style="height: 78px; margin-left: 15px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation (Blue Bar) -->
+    <nav class="navbar navbar-expand-xl navbar-dark py-0 navbar-premium">
+        <div class="container">
+            <button class="navbar-toggler py-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav w-100 justify-content-between small fw-bold text-uppercase">
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-premium" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle nav-link-premium" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-premium shadow border-0 rounded-0 m-0 w-100"
+                            style="max-height: 500px; overflow-y: auto;">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-md-4 py-3">
+                                        <h6 class="dropdown-header-premium border-bottom pb-2 mb-2">Chief
+                                            Commissioner Office</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Contact</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> CCFC</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Public
+                                                    Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Standing
+                                                    Instruction</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Swachhta
+                                                    Pakhwada</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> RTI
+                                                    (CCO)</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Newsletter</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Public
+                                                    Grievance Officers</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Others</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 py-3">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">
+                                            Organization</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    History</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Organizational
+                                                    Structure</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Jurisdiction</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Citizen's
+                                                    Charter</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> RTI
+                                                    (General)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Airport & General (Mega Menu) -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle nav-link-premium" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Airport & General
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-premium shadow border-0 rounded-0 m-0 w-100"
+                            style="max-height: 500px; overflow-y: auto;">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-md-4 py-3 border-end">
+                                        <h6 class="dropdown-header-premium border-bottom pb-2 mb-2">General
+                                            Information</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Contact</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Information
+                                                    (T3)</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> RTI</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Citizen's
+                                                    Charter</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Grievance
+                                                    Redressal</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Unaccompanied
+                                                    Baggage</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 py-3 border-end">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">Notices
+                                            &
+                                            Orders</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Public
+                                                    Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Standing
+                                                    Instructions</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Office
+                                                    Orders</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Alert
+                                                    Circular</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> Press
+                                                    Releases</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 py-3">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">Trade
+                                            Corner</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i>
+                                                    Tenders</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> CHA
+                                                    Corner</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#"><i
+                                                        class="bi bi-chevron-right small text-gold me-1"></i> CCFC
+                                                    Minutes</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Air Cargo (Mega Menu) -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle nav-link-premium" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Air Cargo
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-premium shadow border-0 rounded-0 m-0 w-100"
+                            style="max-height: 500px; overflow-y: auto;">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-md-4 py-3 border-end">
+                                        <h6 class="dropdown-header-premium border-bottom pb-2 mb-2">Import</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Standing Order</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Circulars/Instructions</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Notifications</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">RTI</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TRS</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TSK</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">First time Importer list</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 py-3 border-end">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">Export
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Drawback</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">ROSL</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">IGST Refund</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">New Courier Terminal</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">RTI</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TRS</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">FAQ</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Grievance Redressal</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 py-3">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">Foreign
+                                            Post Office</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Parcels pending at FPO</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">SOP Foreign Post Office</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- ICD Tughlakabad (Mega Menu) -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle nav-link-premium" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ICD Tughlakabad
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-premium shadow border-0 rounded-0 m-0 w-100"
+                            style="max-height: 500px; overflow-y: auto;">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <div class="col-md-6 py-3 border-end">
+                                        <h6 class="dropdown-header-premium border-bottom pb-2 mb-2">Import</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Standing Order</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Minutes of PTFC</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Circular / Notification</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Office Order</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">RTI</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TRS</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TSK</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Raj Bhasha</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TRS 2022 Book</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 py-3">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">Export
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Alert Circular</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Drawback</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">ROSL</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">IGST Refund</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">RTI</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TRS</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">FAQs</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Local Time Release Study
+                                                    2022</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Handbook of Export
+                                                    Process</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- ICD Patparganj & Other Commissioners (Mega Menu) -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle nav-link-premium" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Other Commissionerates
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-premium shadow border-0 rounded-0 m-0 w-100"
+                            style="max-height: 500px; overflow-y: auto;">
+                            <div class="container">
+                                <div class="row w-100">
+                                    <!-- Patparganj -->
+                                    <div class="col-md-3 py-3 border-end">
+                                        <h6 class="dropdown-header-premium border-bottom pb-2 mb-2">ICD
+                                            Patparganj</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Orders</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Drawback</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">ROSL</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">IGST Refund</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">RTI</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">TRS</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Audit -->
+                                    <div class="col-md-3 py-3 border-end">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">
+                                            Commissioner Audit</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Jurisdiction & Procedure</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Standing Order</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">RTI</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Events</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- Appeals -->
+                                    <div class="col-md-3 py-3 border-end">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">
+                                            Commissioner Appeals</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Jurisdiction & Procedure</a>
+                                            </li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- CAAR & Adjudication -->
+                                    <div class="col-md-3 py-3">
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">CAAR
+                                        </h6>
+                                        <ul class="list-unstyled mb-3">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Public Notice</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Tender</a></li>
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Office Order</a></li>
+                                        </ul>
+                                        <h6 class="dropdown-header text-primary fw-bold border-bottom pb-2 mb-2">
+                                            Adjudication</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item ps-0 py-1" href="#">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <!-- Other Links -->
+                    <li class="nav-item"><a class="nav-link nav-link-premium" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
